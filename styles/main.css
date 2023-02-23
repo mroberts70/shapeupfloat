@@ -52,6 +52,7 @@ header h2, header h3 {
 
 h1 {
     padding: .75em 0;
+    text-align: center;
 }
 h3, h4 {
     padding: .5em 0;
@@ -140,6 +141,10 @@ header img {
 #nav_menu ul ul li {
     float: none;
 }
+#nav_menu ul ul li a {
+    text-align: left;
+    padding-left: 12px;
+}
 #nav_menu ul li:hover > ul {
     display: block;
 }
@@ -212,6 +217,9 @@ section {
     width: 50%;
     padding: 0 .3em;
 }
+section h3 {
+    margin-top: 20px;
+}
 
 aside {
     float: left;
@@ -238,10 +246,14 @@ aside li {
 
 blockquote {
     width: 80%;
-    margin-left: 10%;
-    padding: 3px;
-    border-left: 25px solid salmon;
-    background-color: lightcyan;
+    margin-left: 20px;
+    padding: 10px;
+    border-left: 25px solid steelblue;
+    background-color: lightsteelblue;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    font-style: italic;
 }
 
 footer {
@@ -272,7 +284,21 @@ footer p {
          box-shadow: none;
          border: none;
          font-size: 90%;
+         border-radius: 0;
     }
+    #leftcol {
+        display: none;
+    }
+    section {
+        width: 70%;
+    }
+    #rightcol {
+        width: 30%;
+    }
+    header, footer {
+        border-radius: 0;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -285,8 +311,8 @@ footer p {
     .slicknav_menu {
         background-color: steelblue;
     }
-    #leftcol {
-        display: none;
+    #rightcol {
+        border-left: none;
     }
     section, aside, #rightcol {
         float: none;
